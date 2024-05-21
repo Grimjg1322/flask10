@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+{{ super() }}
+<p>Линейная регрессия
+<form action="/p_knn" method="POST">
+    <p><input type="text" class="form_text" name="list1"> Рост от 160 - 182</p>
+    <p><input name="list2" class="form_text" type="text"> Вес от 50 - 90</p>
+    <p><input name="list3" class="form_text" type="text"> Пол от 0 - 1 </p>
+    <input type="submit" class="form_btn" value="Узнать размер обуви">
+    <h1>{{class_model}}</h1>
+    </p>
+</form>
+
+{% endblock %}

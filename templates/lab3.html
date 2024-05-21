@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+{{ super() }}
+<p>Метод модели Дерево условий
+<form action="/p_lab2" method="POST">
+    <p><input type="text" class="form_text" name="list1"> Номер 1-150</p>
+    <p><input name="list2" class="form_text" type="text"> введите вид пингвина 0-2</p>
+    <p><input name="list3" class="form_text" type="text"> введите остров пингвина 0-2</p>
+    <p><input name="list4" class="form_text" type="text"> введите длину пингвина от 35.0 до 45.0</p>
+    <p><input name="list5" class="form_text" type="text"> введите глубину клюва пингвина от 16.0 до 23.0</p>
+    <p><input name="list6" class="form_text" type="text"> введите длину ласта пингвина от 170 до 200</p>
+    <p><input name="list7" class="form_text" type="text"> введите вес в гр 3700 - 4500</p>
+    <p><input name="list8" class="form_text" type="text"> введите год измерения данных 2004-2007</p>
+    <input type="submit" class="form_btn" value="Узнать пол">
+    <h1>{{class_model}}</h1>
+    </p>
+</form>
+
+
+
+{% endblock %}
